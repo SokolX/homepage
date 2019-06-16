@@ -26,3 +26,13 @@ body {
 .paragraph {
 	padding: 10px 20px;
 }
+
+.navigation {
+	position: fixed;
+	width: 100%;
+	padding: 10px;
+	top: 0;
+	left: 0;
+	box-sizing: border-box;
+	background: #006400;
+}
