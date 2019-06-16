@@ -16,3 +16,13 @@ body {
 .link {
 	color: #1a936f;
 }
+
+.main {
+	width: 100%;
+	max-width: 700px;
+	margin: 32px auto;
+}
+
+.paragraph {
+	padding: 10px 20px;
+}
