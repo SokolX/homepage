@@ -2,29 +2,10 @@ body {
 	background: #fefefe;
 	color: #333;
 }
-.heading {
+
+.header__title {
 	color: #00487c;
-}
-.sectionHeader, .diaryHeader {
-		color: #1460aa;
-}
-
-.thirdHeader {
-	color: #0496ff;
-}
-
-.link {
-	color: #1a936f;
-}
-
-.main {
-	width: 100%;
-	max-width: 700px;
-	margin: 32px auto;
-}
-
-.paragraph {
-	padding: 10px 20px;
+	padding: 24px 0 0 0;
 }
 
 .navigation {
@@ -34,5 +15,73 @@ body {
 	top: 0;
 	left: 0;
 	box-sizing: border-box;
-	background: #006400;
+	background: #cccccc;
+}
+
+.navigation__link {
+	color: #1a936f;
+	text-decoration: none;
+}
+
+.main {
+	width: 100%;
+	max-width: 700px;
+	margin: 32px auto;
+}
+
+.about {
+
+}
+
+.about__header {
+	color: #1460aa;
+}
+
+.about__picture {
+	width: 100%;
+	max-width: 100px;
+	display: block;
+	float: left;
+	margin: 0 16px 16px 0;
+}
+
+.about__paragraph {
+	padding: 0;
+	line-height: 24px;
+}
+
+.about__paragraph--mini {
+	font-size: 10px;
+}
+
+.about__link {
+	color: #1a936f;
+}
+
+.diary__header {
+	color: #1460aa;
+}
+
+.day {
+	padding: 16px;
+}
+
+.day__header {
+	color: #0496ff;
+	margin: 0 0 16px;
+	font-size: 20px;
+}
+
+.day__header--weekend {
+	color: red;
+}
+
+.day__paragraph {
+	padding: 0;
+	margin: 0;
+	line-height: 24px;
+}
+
+.day__link {
+	color: #1a936f;
 }
