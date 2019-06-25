@@ -1,23 +1,38 @@
 body {
-	background: url('../img/Portrait.jpg');
+	background-color: #94a6ae;
+	background-image: linear-gradient(90deg, #94a6ae 0%, #ece8f0 100%);
 	color: #333;
 }
 
 .header__title {
 	color: #00487c;
-	padding: 24px 0 0 0;
+	margin-bottom: 48px;
+}
+
+.site-header {
+	background: #94a6ae;
+	box-sizing: border-box;
+	left: 0;
+	padding: 16px;
+	position: fixed;
+	width: 100%;
+	top: 0;
 }
 
 .navigation {
-	position: fixed;
-	width: 100%;
-	padding: 10px;
-	top: 0;
-	left: 0;
-	box-sizing: border-box;
-	background: #cccccc;
+
+}
+
+.navigation__list {
+	list-style: none;
+	padding: 0;
 	display: flex;
 	justify-content: center;
+}
+
+.navigation__item {
+	display: block;
+	margin: 0 16px;
 }
 
 .navigation__link {
