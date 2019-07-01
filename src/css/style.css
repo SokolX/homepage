@@ -10,7 +10,7 @@ body {
 }
 
 .site-header {
-	background: #94a6ae;
+	background: #006400;
 	box-sizing: border-box;
 	left: 0;
 	padding: 16px;
@@ -36,7 +36,7 @@ body {
 }
 
 .navigation__link {
-	color: #1a936f;
+	color: #ffffff;
 	text-decoration: none;
 }
 
@@ -150,3 +150,44 @@ body {
 	justify-content: center;
 	background-color: #fff;
 }
+
+@media (min-width: 640px) {
+	
+	.main {
+		max-width: 900px;
+	}
+
+	.navigation__switcher {
+		display: none;
+	}
+
+}
+
+@media (max-width: 640px) {
+
+
+	.navigation__item {
+		margin: 16px;
+	}
+
+	.navigation__list {
+		flex-direction: column;
+		display: none;
+	}
+
+	.navigation__list--visible {
+		display: flex;
+	}
+
+	.navigation__switcher {
+		border: none;
+		background: none;
+		position: absolute;
+		right: 16px;
+		top: 16px;
+	}
+
+	.site-header {
+		min-height: 48px;
+	}
+}	
