@@ -1,19 +1,22 @@
 body {
-	background-color: #94a6ae;
-	background-image: linear-gradient(90deg, #94a6ae 0%, #ece8f0 100%);
-	color: #333;
+	background-color: #96a5cc;
+	background-image: linear-gradient(90deg, #96a5cc 0%, #ffffff 100%);
+	color: #000;
 }
 
+.header {
+	grid-area: header;
+}
 .header__title {
 	color: #00487c;
 	margin-bottom: 48px;
 }
 
 .site-header {
-	background: #006400;
+	background: #96a5cc;
 	box-sizing: border-box;
 	left: 0;
-	padding: 16px;
+	padding: 8px;
 	position: fixed;
 	width: 100%;
 	top: 0;
@@ -36,18 +39,19 @@ body {
 }
 
 .navigation__link {
-	color: #ffffff;
+	color: #e2e6f1;
 	text-decoration: none;
 }
 
 .main {
-	width: 100%;
+	grid-area: content;
+	display: grid;
+	grid-template-areas: "header header"
+	"about diary";
+	grid-column: 1fr 1fr;
+	grid-gap: 16px;
 	max-width: 700px;
 	margin: 128px auto;
-}
-
-.about {
-
 }
 
 .about__header {
@@ -75,7 +79,17 @@ body {
 	color: #1a936f;
 }
 
+.diary {
+	grid-area: diary;
+	display: grid;
+	grid-template-areas: "headerDay headerDay"
+	"day day";
+	grid-column: 0.5fr 0.5fr;
+}
+
 .diary__header {
+	grid-area: headerDay;
+	text-align: center;
 	color: #1460aa;
 }
 
@@ -145,10 +159,9 @@ body {
 	bottom: 0;
 	left: 0;
 	box-sizing: border-box;
-	border-top: #006400 solid 2px;
 	display: flex;
 	justify-content: center;
-	background-color: #fff;
+	background-color: #96a5cc;
 }
 
 @media (min-width: 640px) {
@@ -160,10 +173,22 @@ body {
 	.navigation__switcher {
 		display: none;
 	}
-
 }
 
 @media (max-width: 640px) {
+
+	.main {
+		grid-template-areas: "header header"
+		"about diary";
+		grid-column: 1fr;
+		grid-gap: 2px;
+	}
+
+	.diary {
+		grid-template-areas: "headerDay"
+		"day";
+		grid-column: 1fr;
+	}
 
 
 	.navigation__item {
@@ -185,6 +210,7 @@ body {
 		position: absolute;
 		right: 16px;
 		top: 16px;
+		color: #00487c;
 	}
 
 	.site-header {
