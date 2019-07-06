@@ -25,5 +25,5 @@ navigationSwitcher.addEventListener('click', (e) => {
 
     const navigationList = document.querySelector('.navigation__list--js');
     navigationList.classList.toggle('navigation__list--visible');
-
+    hamburgerFocus.classList.remove('navigation__switcher--js:focus', 'navigation__switcher--js:focus::after')
 });
